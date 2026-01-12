@@ -6,6 +6,7 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
         int N = Integer.parseInt(br.readLine());
 
         int power = Integer.highestOneBit(N);
@@ -14,7 +15,7 @@ public class Main {
         if (N == power) {
             answer = N;
         } else {
-            answer = 2 * (N - power);
+            answer = (N - power) * 2;
         }
 
         System.out.println(answer);
